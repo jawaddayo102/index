@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Tic Tac Toe</h1>
+    <p class="subtitle">Two players, one device. X goes first.</p>
+
+    <!-- Scoreboard -->
+    <div class="scores">
+      <div class="score"><span>Player X</span><strong id="scoreX">0</strong></div>
+      <div class="score"><span>Draws</span><strong id="scoreDraw">0</strong></div>
+      <div class="score"><span>Player O</span><strong id="scoreO">0</strong></div>
+    </div>
+
+    <p id="status" class="status" role="status"></p>
+
+    <!-- The 9 squares are created by script.js -->
+    <div id="board" class="board" role="grid" aria-label="Tic Tac Toe board"></div>
+
+    <div class="actions">
+      <button id="newGameBtn" class="btn" type="button">New Game</button>
+      <button id="resetScoresBtn" class="btn-ghost" type="button">Reset Scores</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
